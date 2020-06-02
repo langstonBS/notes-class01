@@ -4,7 +4,9 @@ const { exicute} = require('./lib/notes');
 
 const parsing = parse(process.argv);
 const valadating = valid(parsing);
-const exicuteing = exicute(valadating);
+
+if (valadating) exicute(valadating);
+else console.log('didn ont workd ')
 
 
 
