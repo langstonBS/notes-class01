@@ -1,12 +1,10 @@
 const minimist = require("minimist");
-const { parse, valid } = require('./lib/input');
-const { exicute} = require('./lib/notes');
+const Input = require('./lib/input');
+const Notes = require('./lib/notes');
 
-const parsing = parse(process.argv);
-const valadating = valid(parsing);
-
-if (valadating) exicute(valadating);
-else console.log('didn ont workd ')
+const parsing = new Notes(process.argv);
+if (parsing) Input(valadating);
+else console.error('thats')
 
 
 
