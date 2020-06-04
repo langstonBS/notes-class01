@@ -1,7 +1,10 @@
 const minimist = require("minimist");
-const { parse, valid } = require('./lib/input');
-const { exicute } = require('./lib/notes');
+const Input = require('./lib/Input');
+const Notes = require('./lib/Notes');
 
+let input = new Notes(process.argv);
+
+const isGoodIn = input.valid
 
 
 
