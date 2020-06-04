@@ -1,6 +1,6 @@
 const minimist = require("minimist");
-const Input = require('./lib/input');
-const Notes = require('./lib/notes');
+const Input = require('./lib/Input');
+const Notes = require('./lib/Notes');
 
 let input = new Notes(process.argv);
 
